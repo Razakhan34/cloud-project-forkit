@@ -1,0 +1,206 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #512da8;
+  color: #fff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  top: 70px;
+  right: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  /* display: none; */
+  z-index: 1;
+  min-width: 150px;
+}
+
+.profile:hover .dropdown {
+  display: block;
+}
+
+.dropdown {
+  position: absolute;
+  top: 70px;
+  right: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: none;
+  z-index: 1;
+  min-width: 150px;
+}
+
+.profile:hover .dropdown {
+  display: block;
+}
+
+.dropdown button {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  text-align: left;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+.dropdown button:hover {
+  background-color: #f5f5f5;
+}
+
+.dropdown button:last-child {
+  margin-top: 10px;
+  background-color: #f44336;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.dropdown button:last-child:hover {
+  background-color: #d32f2f;
+}
+
+/* Keep dropdown visible when hovered over */
+.dropdown:hover {
+  display: block;
+}
+
+/* Delay hiding the dropdown when cursor moves away */
+.dropdown:not(:hover) {
+  display: none;
+}
+
+.search-bar {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #512da8;
+  border-radius: 30px;
+  outline: none;
+}
+
+.search-bar input[type="submit"] {
+  background-color: #512da8;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar input[type="submit"]:hover {
+  background-color: #470e68;
+}
+
+/* New style for displaying user accounts */
+.user-accounts {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.user-account {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.user-account:last-child {
+  border-bottom: none;
+}
+
+.user-account img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.user-info {
+  flex-grow: 1;
+}
+
+.user-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.user-skills {
+  color: #666;
+}
+
+.connect-button {
+  background-color: #512da8;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.connect-button:hover {
+  background-color: #470e68;
+  color: #fff;
+}
